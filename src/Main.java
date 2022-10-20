@@ -5,14 +5,17 @@ public class Main {
         System.out.println("Torneo Da Vinci");
 
         Date comienzoDeCursada = new Date(2022,7,18);
-
-
         Date finDeCursada = new Date(2022,11,5);
+        Date fechaParcial = new Date(2022,8,29);
 
 
         Season torneoDaVinci = new Season("Torneo 2022", comienzoDeCursada, finDeCursada);
 
         torneoDaVinci.setStartDate(comienzoDeCursada);
         torneoDaVinci.setEndDate(finDeCursada);
+
+        Match primerParcial = new Match(fechaParcial,"Aula 116" );
+
+
     }
 }

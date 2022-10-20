@@ -8,6 +8,19 @@ public class Match {
     private int localGoalCounter;
     private int visitantGoalCounter;
 
+    Match( ){
+        this.setLocalGoalCounter(0);
+        this.setVisitantGoalCounter(0);
+    }
+
+
+    Match(Date date, String location){
+        this.setLocalGoalCounter(0);
+        this.setVisitantGoalCounter(0);
+        this.setDate(date);
+        this.setLocation(location);
+    }
+
     public void setLocation(String location){
         this.location = location;
         return;
@@ -47,5 +60,13 @@ public class Match {
     public void setVisitantGoalCounter(int visitantGoalCounter) {
         this.visitantGoalCounter = visitantGoalCounter;
         return;
+    }
+
+    public Team getVisitantTeam() {
+        return visitantTeam;
+    }
+
+    public int getVisitantGoalCounter() {
+        return visitantGoalCounter;
     }
 }

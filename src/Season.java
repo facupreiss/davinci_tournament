@@ -38,4 +38,15 @@ public class Season {
     }
 
 
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public ArrayList<Match> getMatchs() {
+        return matchs;
+    }
+
+    public void setMatchs(ArrayList<Match> matchs) {
+        this.matchs = matchs;
+    }
 }
