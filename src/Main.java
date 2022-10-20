@@ -15,10 +15,14 @@ public class Main {
         torneoDaVinci.setEndDate(finDeCursada);
 
         Player profeSergio = new Player("Sergio Medina", "Goalkeeper");
+        Player profeSuplente = new Player("Suplente", "Defender");
 
-        
+
 
         Team equipoPoo = new Team("Profes POO");
+        equipoPoo.addPlayer(profeSergio);
+        equipoPoo.addPlayer(profeSuplente);
+
         Team estudiantesPoo = new Team("Estudiantes POO");
 
         Match primerParcial = new Match(fechaParcial,"Aula 116", equipoPoo, estudiantesPoo );
