@@ -18,7 +18,6 @@ public class Main {
         Player profeSuplente = new Player("Suplente", "Defender");
 
 
-
         Team equipoPoo = new Team("Profes POO");
         equipoPoo.addPlayer(profeSergio);
         equipoPoo.addPlayer(profeSuplente);
@@ -26,9 +25,6 @@ public class Main {
         Team estudiantesPoo = new Team("Estudiantes POO");
 
         Match primerParcial = new Match(fechaParcial,"Aula 116", equipoPoo, estudiantesPoo );
-
-
-
 
 
 
