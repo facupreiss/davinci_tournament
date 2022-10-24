@@ -58,24 +58,37 @@ public class Match {
         this.localGoalCounter++;
     }
 
-    public int getLocalCounter(){
-        return this.localGoalCounter;
-    }
 
-    public void setLocalGoalCounter(int localGoalCounter) {
-        this.localGoalCounter = localGoalCounter;
-        return;
-    }
-    public void setVisitantGoalCounter(int visitantGoalCounter) {
-        this.visitantGoalCounter = visitantGoalCounter;
-        return;
-    }
 
     public Team getVisitantTeam() {
         return visitantTeam;
     }
 
+
+    public int getLocalGoalCounter() {
+        return localGoalCounter;
+    }
+
+    public void setLocalGoalCounter(int localGoalCounter) {
+        this.localGoalCounter = localGoalCounter;
+    }
+
     public int getVisitantGoalCounter() {
         return visitantGoalCounter;
+    }
+
+    public void setVisitantGoalCounter(int visitantGoalCounter) {
+        this.visitantGoalCounter = visitantGoalCounter;
+    }
+
+    public String generateMarker(){
+        return String.format("%s (%d) - %s (%d)",
+        this.getLocalTeam().getName(),
+        this.getLocalGoalCounter(),
+        this.getVisitantGoalCounter(),
+        this.getVisitantTeam().getName()
+    );
+
+       // return this.getLocalGoalCounter() + "-" + this.getVisitantGoalCounter();
     }
 }
