@@ -44,7 +44,8 @@ public class Main {
 
         Match primerParcial = new Match(fechaParcial,"Aula 116", equipoPoo, estudiantesPoo );
 
-    System.out.println(primerParcial.generateMarker());
-
+        System.out.println(primerParcial.generateMarker());
+        primerParcial.makeGoal(equipoPoo, equipoPoo.getPlayers().get(0));
+        System.out.println(primerParcial.generateMarker());
     }
 }

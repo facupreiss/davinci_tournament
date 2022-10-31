@@ -28,6 +28,6 @@ public class Team {
     }
 
     public ArrayList<Player> getPlayers() {
-        return players;
+        return this.players;
     }
 }

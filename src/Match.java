@@ -81,8 +81,20 @@ public class Match {
         this.visitantGoalCounter = visitantGoalCounter;
     }
 
+    public void makeGoal (Team team, Player player) {
+        if (team.getName() == this.getLocalTeam().getName()) {
+            this.localGoalCounter++;
+            //setLocalGoalCounter(getLocalGoalCounter()+1);
+        }
+        if (team.getName() == this.getVisitantTeam().getName()) {
+            this.visitantGoalCounter++;
+    }
+        player.incrementGoalCounter();
+    }
+
+
     public String generateMarker(){
-        return String.format("%s (%d) - %s (%d)",
+        return String.format("%s (%d) - (%d) %s",
         this.getLocalTeam().getName(),
         this.getLocalGoalCounter(),
         this.getVisitantGoalCounter(),
